@@ -1,15 +1,9 @@
 package com.example.idsystem.domain
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class Cadastro(
-    val id: Int,
-    val nome: String,
-    val cpf: String,
-    val telefone: String,
-    val endereco: String,
-    val tipoSanguineo: String,
-    val alergia: String,
-    val doencaCronica: String,
-    val nomeContatoEmergencia: String,
-    val telContatoEmergencia: String,
-    val observacoes: String
-)
+    val cpf: String
+) :Parcelable

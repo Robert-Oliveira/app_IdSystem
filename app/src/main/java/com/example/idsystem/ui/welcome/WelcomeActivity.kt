@@ -1,12 +1,11 @@
-package com.example.idsystem.ui
+package com.example.idsystem.ui.welcome
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.example.idsystem.BuscaActivity
-import com.example.idsystem.BuscaRegistroActivity
-import com.example.idsystem.DadosRegistroActivity
+import com.example.idsystem.ui.statement.BuscaActivity
+import com.example.idsystem.ui.statement.BuscaRegistroActivity
 import com.example.idsystem.R
 
 class WelcomeActivity : AppCompatActivity() {
@@ -15,13 +14,9 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
     }
 
-    fun cadastrarInfos(view: View){
-        val intent = Intent(this, DadosRegistroActivity::class.java)
-        startActivity(intent)
-    }
-
     fun buscarPessoas(view: View){
         val intent = Intent(this, BuscaRegistroActivity::class.java)
         startActivity(intent)
     }
+
 }
